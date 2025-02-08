@@ -9,7 +9,7 @@ This is OPen-GAS, a project powered by AI for security incident management based
 - Scalable
 - Alignment
 
-![Project Logo](/screenshots/1.jpg) <!-- Replace with your image URL or relative path -->
+![Project Logo](/screenshots/1.gif) <!-- Replace with your image URL or relative path -->
 
 ## Installation
 To install this project, follow these steps:
@@ -36,7 +36,7 @@ We need collaborators to support this endeavor; you may consider one or more of 
 
 
 
-![Project Logo](/screenshots/2.jpg) <!-- Replace with your image URL or relative path -->
+![Project Logo](/screenshots/2.gif) <!-- Replace with your image URL or relative path -->
 
 
-![Project Logo](/screenshots/3.jpg) <!-- Replace with your image URL or relative path -->
+![Project Logo](/screenshots/3.gif) <!-- Replace with your image URL or relative path -->
