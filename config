@@ -1,0 +1,4 @@
+[DEFAULT]
+GEN_AI = "gpt-3.5-turbo"
+DOCUMENT_PATH = "./document/document.txt"
+EMBEDDING_PATH = "./embedding_doc/doc_faiss_index/"

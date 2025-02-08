@@ -1,0 +1,52 @@
+Attack Goal
+- Confidentiality
+- Integrity
+- Availability
+- Authentication
+- Authorization
+- Non-repudiation
+- Accountability
+- Reliability
+- Privacy
+- Resilience
+- Possession
+
+Target Assets
+- Data and Information
+- - Data in transit
+- - Data in use
+- - Data at rest
+- System and Application
+- - Hardware
+- - Software
+- Network Infrastructure
+- Devices and Endpoints
+- Applications and Software
+- Cloud Services
+- User Accounts and Credentials
+- Physical Assets
+- Operational Technology (OT)
+- Intellectual Property and Trade Secrets
+- Communication Channels
+- Supply Chain and Third-Party Services
+
+
+Cybersecurity Solution
+- Preventative Controls
+- - Technical Solutions
+- - Administrative Solutions
+- - Physical Security Solutions
+- - Human-Centric Solutions
+- Detective Controls
+- - Technical Solutions
+- - Administrative Solutions
+- - Human-Centric Solutions
+- Corrective Controls
+- - Technical Solutions
+- - Operational Solutions
+- Recovery Controls
+- - Operational Solutions	
+- Risk Management
+- - Administrative Solutions
+- - Legal and Ethical Solutions
+- - Emerging Technologies
