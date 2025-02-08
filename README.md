@@ -35,8 +35,9 @@ We need collaborators to support this endeavor; you may consider one or more of 
 - and many more
 
 
-
 ![Project Logo](/screenshots/2.gif) <!-- Replace with your image URL or relative path -->
 
 
 ![Project Logo](/screenshots/3.gif) <!-- Replace with your image URL or relative path -->
+
+For comments join our [Discussions](https://github.com/Yemmy1000/open-gas/discussions/1) 
