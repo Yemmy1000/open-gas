@@ -1,5 +1,5 @@
 # Project
-![Project Logo](/banner.JPG) <!-- Replace with your image URL or relative path -->
+![Project Logo](/banner.jpg) <!-- Replace with your image URL or relative path -->
 
 **Ope-GAS**! 
 This is OPen-GAS, a project powered by AI for security incident management based on the attack goal (G), affected assets (A), and the solutions (S). The framework aims to incorporate various standard frameworks for incident management, including NIST, ISO, MITRE, SANS, etc. The goal of the project is to support the democratization of cybersecurity solutions.
