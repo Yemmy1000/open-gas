@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 from rich.console import Console
 from rich.markdown import Markdown
@@ -96,6 +97,14 @@ def tdisplay(text):
     # Print the formatted text
     console.print(markdown_text)
 
+def extra_prompt(extra_prmpt: str):
+    if extra_prmpt.lower() == 'exit':
+        sys.exit() 
+    else:
+        return extra_prmpt
+
+
+
 
 def main():
     # Example usage
@@ -147,7 +156,8 @@ def main():
     for count in range(len(Preventative_Controls)):
         myKey = list(Preventative_Controls.keys())[count]
         hdisplay(f"""# {myKey} """)
-        rf_user_prompt = input(f"I want to assist to provide {myKey} for preventative controls considering  {Preventative_Controls[myKey]}, \n> More instruction?: ")
+        rf_user_prompt = input(f"I want to assist to provide {myKey} for preventative controls considering  {Preventative_Controls[myKey]}, \n> More instructions? | enter -> empty | type exit -> close: ")
+        rf_user_prompt = extra_prompt(rf_user_prompt)
         cot_prompt = cot.preventive_control(rf_user_prompt, response, count)       #cybersecurity solution
         response = ai_analyst.analyse(cot_prompt)
         # print(response)
@@ -158,7 +168,8 @@ def main():
     for count in range(len(Detective_Controls)):
         myKey = list(Detective_Controls.keys())[count]
         hdisplay(f"""# {myKey} """)
-        rf_user_prompt = input(f"I want to assist to provide {myKey} for detective controls considering  {Detective_Controls[myKey]}, \n> More instruction?: ")
+        rf_user_prompt = input(f"I want to assist to provide {myKey} for detective controls considering  {Detective_Controls[myKey]}, \n> More instructions? | enter -> empty | type exit -> close: ")
+        rf_user_prompt = extra_prompt(rf_user_prompt)
         cot_prompt = cot.detective_controls(rf_user_prompt, response, count)       #cybersecurity solution
         response = ai_analyst.analyse(cot_prompt)
         # print(response)
@@ -169,7 +180,8 @@ def main():
     for count in range(len(Corrective_Controls)):
         myKey = list(Corrective_Controls.keys())[count]
         hdisplay(f"""# {myKey} """)
-        rf_user_prompt = input(f"I want to assist to provide {myKey} for corrective controls considering  {Corrective_Controls[myKey]}, \n> More instruction?: ")
+        rf_user_prompt = input(f"I want to assist to provide {myKey} for corrective controls considering  {Corrective_Controls[myKey]}, \n> More instructions? | enter -> empty | type exit -> close: ")
+        rf_user_prompt = extra_prompt(rf_user_prompt)
         cot_prompt = cot.corrective_controls(rf_user_prompt, response, count)       #cybersecurity solution
         response = ai_analyst.analyse(cot_prompt)
         # print(response)
@@ -180,7 +192,8 @@ def main():
     for count in range(len(Recovery_Controls)):
         myKey = list(Recovery_Controls.keys())[count]
         hdisplay(f"""# {myKey} """)
-        rf_user_prompt = input(f"I want to assist to provide {myKey} for recovery controls considering  {Recovery_Controls[myKey]}, \n> More instruction?: ")
+        rf_user_prompt = input(f"I want to assist to provide {myKey} for recovery controls considering  {Recovery_Controls[myKey]}, \n> More instructions? | enter -> empty | type exit -> close: ")
+        rf_user_prompt = extra_prompt(rf_user_prompt)
         cot_prompt = cot.recovery_controls(rf_user_prompt, response, count)       #cybersecurity solution
         response = ai_analyst.analyse(cot_prompt)
         # print(response)
@@ -191,7 +204,8 @@ def main():
     for count in range(len(Risk_Management)):
         myKey = list(Risk_Management.keys())[count]
         hdisplay(f"""# {myKey} """)
-        rf_user_prompt = input(f"I want to assist to provide {myKey} for risk management considering  {Risk_Management[myKey]}, \n> More instruction?: ")
+        rf_user_prompt = input(f"I want to assist to provide {myKey} for risk management considering  {Risk_Management[myKey]}, \n> More instructions? | enter -> empty | type exit -> close: ")
+        rf_user_prompt = extra_prompt(rf_user_prompt)
         cot_prompt = cot.risk_management(rf_user_prompt, response, count)       #cybersecurity solution
         response = ai_analyst.analyse(cot_prompt)
         # print(response)
@@ -199,7 +213,7 @@ def main():
 
 
     hdisplay("""# The Final Thoughts""")
-    rf_user_prompt = input(f"I want to assist to provide final thoughts, \n> More instruction?: ")
+    rf_user_prompt = input(f"I want to assist to provide final thoughts, \n> More instructions?: ")
     cot_prompt = cot.process_input(rf_user_prompt, response)       #attack assets
     response = ai_analyst.analyse(cot_prompt)
     # print(response)

@@ -6,7 +6,6 @@ import random
 
 import os
 from openai import OpenAI
-from key import get_openai_key
 import configparser
 from rag.rag_embedding_retriever import EmbeddingRetrieval
 # Create a ConfigParser object
