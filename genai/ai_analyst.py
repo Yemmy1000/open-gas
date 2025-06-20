@@ -49,12 +49,11 @@ class AI_Analyst:
         messages = [
             {
                 "role": "system", 
-                "content":"You are a cybersecurity and information security expert. \
+                "content":"""You are a cybersecurity and information security expert. \
                     Note: \
-                        Buttress your points by providing technical details such as code, configuration, settings, templates, etc \
-                        only produce a quality, professional and verifiable contents \
+                        Only produce a quality, professional and verifiable contents \
                         \
-                            "
+                            """
             },
             {
                 "role": "user", 
