@@ -6,8 +6,13 @@ import random
 
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
 import configparser
 from rag.rag_embedding_retriever import EmbeddingRetrieval
+load_dotenv()
+# print(os.environ.get("OPENAI_API_KEY")) #key should now be available
+
+
 # Create a ConfigParser object
 config = configparser.ConfigParser()
 
@@ -45,7 +50,11 @@ class AI_Analyst:
             {
                 "role": "system", 
                 "content":"You are a cybersecurity and information security expert. \
-                    Note: only produce the quality, professional and verifiable contents"
+                    Note: \
+                        Buttress your points by providing technical details such as code, configuration, settings, templates, etc \
+                        only produce a quality, professional and verifiable contents \
+                        \
+                            "
             },
             {
                 "role": "user", 
